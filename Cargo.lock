@@ -3142,8 +3142,6 @@ dependencies = [
 [[package]]
 name = "curvy-witnesscalc"
 version = "0.1.0-rc.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f30dda0cbfc8aeff8db0f7d285262516cd3d2765d25d6de0b75f5ea20b63743b"
 dependencies = [
  "anyhow",
  "ark-bn254 0.6.0",

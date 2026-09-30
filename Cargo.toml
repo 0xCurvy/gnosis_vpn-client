@@ -88,3 +88,10 @@ lto           = "fat"
 opt-level     = 3
 panic         = "abort"
 strip         = true
+
+# TEST ONLY (do not merge): curvy-witnesscalc 0.1.0-rc.7 with the five zkey pins moved to the
+# Gnosis trusted-setup ceremony keys (same values as rs-sdk 0.1.0-rc.9), so the client proves
+# against the Gnosis PIX staging aggregator before rs-sdk rc.9 / hopr-strategy are published.
+# Keeps version rc.7 to satisfy hopr-strategy 5.1.0's `=0.1.0-rc.7`. See patches/curvy-witnesscalc.
+[patch.crates-io]
+curvy-witnesscalc = { path = "patches/curvy-witnesscalc" }
