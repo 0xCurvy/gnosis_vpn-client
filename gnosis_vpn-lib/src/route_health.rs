@@ -927,7 +927,7 @@ impl HealthSession {
             capabilities: options.sessions.bridge.capabilities,
             forward_path: destination.routing,
             return_path: destination.routing,
-            always_max_out_surbs: health_surb.always_max_out_surbs,
+            max_surbs_per_data_packet: health_surb.max_surbs_per_data_packet,
             surb_management: health_surb.management,
             ..Default::default()
         };

@@ -27,7 +27,7 @@ clap = { version = "~4.6.6", features = ["derive", "env"] }
 clap_complete = "~4.6.9"
 # The PIX deposit pool is edgli's default `pix-curvy`; the pool has to match the curve the network's
 # exits run, so it is not a client-side choice.
-edgli = { git = "https://github.com/0xCurvy/edge-client.git", rev = "aa42fa26e4a92e1df029a02e4b5438e3aab48ae7", features = [
+edgli = { git = "https://github.com/hoprnet/edge-client.git", rev = "f17d64d554f92c89614d9a10abc973f9ad020626", features = [
   "blokli",
   "telemetry",
 ] }
@@ -57,7 +57,7 @@ rustix = { version = "~1.1.4", features = ["fs", "net", "pipe", "stdio"] }
 serde = { version = "~1.0.229", features = ["derive"] }
 serde-saphyr = "~1.2.0"
 serde_json = "~1.0.151"
-serde_with = "~3.23.0"
+serde_with = "~3.24.0"
 tempfile = "~3.27.0"
 thiserror = "~2.0.20"
 tikv-jemallocator = "~0.7.0"
